@@ -1,0 +1,28 @@
+<!--
+  Generated template for the AddNotePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>AddNote</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Title</ion-label>
+    <ion-input [(ngModel)]="note.title" placeholder="Java Sample Approach"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Content</ion-label>
+    <ion-textarea [(ngModel)]="note.content" placeholder="Java Technology - Spring Framework"></ion-textarea>
+  </ion-item>
+
+  <button ion-button block clear (click)="addNote(note)">Add</button>
+</ion-content>

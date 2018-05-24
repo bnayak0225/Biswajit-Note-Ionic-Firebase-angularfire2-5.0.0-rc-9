@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Biswajit Note
+    </ion-title>
+
+    <ion-buttons end>
+      <button navPush="AddNotePage" ion-button>
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Notes
+    </ion-list-header>
+
+    <ion-item *ngFor="let note of items | async"
+    detail-push navPush="EditNotePage" [navParams]="{note:note}">
+      {{note.title}}
+    </ion-item>
+  </ion-list>
+</ion-content>
