@@ -1,6 +1,6 @@
 # Biswajit-Note
 
-Update all your depedancy
+Update all your depedancy as per my package.json file.
 
 package.json
 
